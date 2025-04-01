@@ -1,0 +1,17 @@
+fn create_string(){
+    let mut s1 = String::from("hello");
+    //passing back the ownership
+    //print_string(s1);   here print_string owns the string
+    // this is same as let s2 = s1;
+    s1 = print_string(s1);  // now create_string or S1 owns the string.
+    println!("{}",s1);
+}
+
+fn print_string(s2: String) -> String{
+    println!("{}",s2);
+    return s2;
+}
+
+fn main(){
+    create_string();
+}
