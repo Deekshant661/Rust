@@ -1,4 +1,5 @@
 fn get_string_length(str: String) -> usize{
+    //Note - we can run this even my keeping the argument &str instead of String . &str is a reference to the main string instead of sending the actual String.
     //Method 1
     // let mut length = 0;
     // for _char in str.chars(){
