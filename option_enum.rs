@@ -29,6 +29,7 @@ fn find_first_a(str: String) -> CustomOption{
     for (index,char) in str.chars().enumerate(){
         if char == 'a' {
             return CustomOption::Some(index as i32);
+            //return the some variant of the enum Option
         }
     }
     return CustomOption::None;
