@@ -1,3 +1,11 @@
+//String vs Slices
+// fn main(){
+//     let mut str = String::from("Hello world");
+//     print!("Intial : {}",str);
+//     str.replace_range(5..str.len(),"");
+//     println!("updated : {}",str);
+// }
+
 //Slices
 //Write a function that takes a string and returns the first word
 
